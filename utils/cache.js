@@ -1,9 +1,9 @@
 import { Redis } from "ioredis";
 
 const redis = new Redis({
-    host: "redis-18736.c232.us-east-1-2.ec2.redns.redis-cloud.com",
-    port: 18736,
-    password: "ecT2fWE7YExHcP7eJ6WARcgc7JxdaTBd",
+    host:process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT,
+    password:process.env.REDIS_PASSWORD,
   });
 
   
